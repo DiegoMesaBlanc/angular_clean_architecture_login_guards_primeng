@@ -1,0 +1,15 @@
+<div class="z-5 border-none border-primary">
+  <p-menubar class="z-5 border-none border-primary" [model]="items">
+    <ng-template pTemplate="start">
+      <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+    </ng-template>
+
+    <ng-template pTemplate="end">
+      <p-button *ngIf="authServ.user$ | async" label="CERRAR SESIÓN" styleClass="p-button-link"
+                (click)="logOut()"></p-button>
+      <!-- <a [routerLink]="['/routePath']" *appAllowed="['Inventory', 'Manager']"></a>
+      <a [routerLink]="['/routePath']" *appAllowed="['Accounting', 'Manager']"></a>
+      <a [routerLink]="['/routePath']" *appAllowed="['Orders', 'Manager']"></a> -->
+    </ng-template>
+  </p-menubar>
+</div>

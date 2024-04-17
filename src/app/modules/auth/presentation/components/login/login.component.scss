@@ -1,0 +1,32 @@
+::ng-deep .no__flex .p-button-label {
+  flex: 0;
+}
+
+::ng-deep .no__flex button {
+  justify-content: center;
+}
+
+::ng-deep .no__flex button:hover {
+  border: 2px solid var(--blue-900) !important;
+  color: var(--blue-900) !important;
+}
+
+::ng-deep .p-card {
+  background: transparent;
+  // border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+::ng-deep .p-card-content {
+  padding: 0;
+}
+
+input {
+  background: transparent;
+}
+
+a {
+  cursor: pointer;
+}
